@@ -10,31 +10,43 @@ anomalies to direct specific testing of your hypothesis.
 
 # ALGORITHM
 ### STEP 1
-Read the given Data
+Import the required packages(pandas,numpy,seaborn).
 
 ### STEP 2
-Get the information about the data
+Read and Load the Dataset.
 
 ### STEP 3
-Remove the null values from the data
+Remove the null values from the data and remove the outliers.
 
 ### STEP 4
-Save the Clean data to the file
+Remove the non-numerical data columns using drop() method.
+
+### STEP 5
+Return object containing counts of unique values using (value_counts()).
+
+### STEP 6
+Plot the counts in the form of Histogram or Bar Graph.
+
+### STEP 7
+Find the pairwise correlation of all columns in the dataframe(.corr()).
+
+### STEP 8
+Save the final data set into the file.
 
 
 
 
 # CODE
 # DATA ANALYSIS STEPS
-import numpy as np
+### import numpy as np
 
-import pandas as pd
+### import pandas as pd
 
-import seaborn as sns
+### import seaborn as sns
 
-df=pd.read_csv("titanic_dataset.csv")
+### df=pd.read_csv("titanic_dataset.csv")
 
-df.info()
+### df.info()
 ![GITLOGO](1.jpg)
 
 df.head()
